@@ -17,8 +17,10 @@ driver.find_element(By.NAME, 'email').send_keys('hello@gmail.com')
 driver.find_element(By.ID, 'exampleInputPassword1' ).send_keys('123456')
 driver.find_element(By.ID, 'exampleCheck1').click()
 #Custom xpath - //tagname[@attribute='value']
+
 driver.find_element(By.CSS_SELECTOR, "input[name='name']").send_keys('Pradeep')
 # Custom css -   tagname[attribute='value']
+
 driver.find_element(By.CSS_SELECTOR, '#inlineRadio1').click()   #ID
 driver.find_element(By.XPATH, "(//input[@type='text'])[3]").send_keys('HelloPradeep')
 
