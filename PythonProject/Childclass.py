@@ -1,24 +1,15 @@
-import self
-
-from oops import Calculator
+from PythonProject.Oopsdemo import Calculator
 
 
-class childinheritance(Calculator):
+class ChildImp(Calculator):
     num2 = 200
 
     def __init__(self):
-        Calculator.__init__(self, 2, 3)
+        Calculator.__init__(self, 12, 10)
+
+    def getData(self):
+        return self.num2 + self.num + self.summation()
 
 
-    def getcompletedata(self):
-        return self.num2 + self.num + self.Summation()
-
-
-obj = childinheritance()
-print(obj.getcompletedata())
-
-
-# test= Calculator(1,2)
-# test.getData()
-# print(test.Summation())
-# print()
+obj = ChildImp()
+print(obj.getData())

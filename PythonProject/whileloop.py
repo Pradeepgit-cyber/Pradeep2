@@ -1,10 +1,14 @@
-it = 4
+it = 10
 
-while it>1: # If 4 is greater than 1 print line no 6
-    if it == 3:     #value equality
-        break # If condition matches it will break the loop
+while it>1:
+    #if it != 3: #if it is not equal to 3 it will print only 4,2
+    if it == 9:
+        continue #it will skip the current itteration if the if condition it matches with 9
+    if it == 3:
+        break    #break #it will break the while loop execution if it is equal to 3
     print(it)
+    it = it-1
 
-    # it = it - 1 # If 4 - 1 = 3 , matches the condition of line no 4
 
-print('While loop execution is True')
+print("while loop execution is done")
+

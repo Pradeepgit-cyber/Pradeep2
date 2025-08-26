@@ -24,3 +24,6 @@ print(obj.Summation()) #calls summation method.
 obj1 = Calculator(4,5)   #Syntax to create an object in python
 obj1.getData()
 print(obj1.Summation())
+
+
+
