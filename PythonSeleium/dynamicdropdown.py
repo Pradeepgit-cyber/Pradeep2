@@ -16,6 +16,11 @@ for country in countries:
         country.click()
         break
 
+print(driver.find_element(By.ID, 'autosuggest').get_attribute('value'))  #to extract the value
+
+#if we need to assert
+# assert driver.find_element(By.ID, 'autosuggest').get_attribute('value') == 'India'
+
 
 
 
