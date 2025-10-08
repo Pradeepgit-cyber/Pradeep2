@@ -15,6 +15,7 @@ action = ActionChains(driver)
 # action.context_click().perform()  #right click on any element
 # action.double_click().perform()  #need to double click on any element
 # action.drag_and_drop().perform()
+time.sleep(5)
 action.move_to_element(driver.find_element(By.ID, "mousehover")).perform()
 # action.context_click(driver.find_element(By.LINK_TEXT, "Top")).perform()
 action.move_to_element(driver.find_element(By.LINK_TEXT, "Reload")).click()
