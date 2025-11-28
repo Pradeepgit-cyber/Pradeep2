@@ -1,57 +1,92 @@
 # Pradeep SDET Portfolio
 
-Welcome to the **Pradeep SDET Portfolio** repository! This project showcases my experience and skills as a Software Development Engineer in Test (SDET), featuring a collection of automation frameworks, test scripts, and utility tools developed throughout my professional journey.
+Welcome to the **Pradeep SDET Portfolio** repository!  
+This is a real-world automation testing framework using **Selenium**, **Python**, and **pytest**.  
+It features practical organization, maintainability, and scalability for both beginners and experienced SDETs.
 
-## About Me
+## Project Structure
 
-I am Pradeep, an experienced SDET focused on delivering robust, scalable, and maintainable automation solutions. My portfolio demonstrates expertise in various testing tools, programming languages, and best practices, enabling faster and more reliable software releases.
+A typical Python Selenium + pytest automation project should have a clean modular structure for rapid development, reusability, and easy test execution:
 
-## Repository Structure
+```
+Pradeep_SDET_Portfolio/
+├── tests/                   # All test case files (.py), organized by feature/module
+│   ├── test_login.py
+│   ├── test_checkout.py
+│   └── ...
+├── pages/                   # Page Object Model classes
+│   ├── login_page.py
+│   ├── checkout_page.py
+│   └── ...
+├── utils/                   # Helper modules/utilities for logging, config, etc.
+│   ├── driver_factory.py
+│   ├── logger.py
+│   ├── config_reader.py
+│   └── ...
+├── data/                    # Test data files (CSV, JSON, Excel, etc.)
+│   ├── users.json
+│   └── ...
+├── reports/                 # Directory for HTML/Allure reports output
+│
+├── requirements.txt         # List of Python dependencies
+├── pytest.ini               # Pytest configuration file
+├── conftest.py              # Pytest fixtures and hooks (optional but recommended)
+├── .env                     # Environment variable settings (optional)
+├── README.md                # Documentation
+└── LICENSE
+```
 
-- **Automation Frameworks**: Implementations of popular automation frameworks using technologies like Selenium, TestNG, JUnit, REST Assured, and Cypress.
-- **Test Scripts**: Samples of automated test cases for UI, API, and performance testing.
-- **Utilities & Helpers**: Custom utilities to streamline testing processes.
-- **Documentation**: Guides and references to help understand and use the solutions in this repository.
+## Folder & File Highlights
+
+- **tests/**: Contains pytest-compatible test scripts. Recommended: Group by feature or module.
+- **pages/**: Page Object Model classes for each app page, encapsulating element locators and actions.
+- **utils/**: Utility helpers (logging, config reading, webdriver initialization, etc.).
+- **data/**: Test data, credentials, configurations in various formats.
+- **reports/**: Test execution results, reports artifacts.
+- **conftest.py**: Shared pytest fixtures (driver initialization, setup/teardown, etc.).
+- **pytest.ini**: Customizes pytest behavior (markers, options).
+- **requirements.txt**: Essential libraries (selenium, pytest, etc.).
+- **.env**: Environment-specific settings such as URLs or credentials (do not commit secrets).
+- **README.md**: Project documentation.
 
 ## Technologies Used
 
-- **Programming Languages**: Java, JavaScript, Python
-- **Testing Tools**: Selenium WebDriver, TestNG, JUnit, Cucumber, Cypress, REST Assured, Postman
-- **CI/CD**: Jenkins, GitHub Actions
-- **Reporting**: ExtentReports, Allure
+- **Python**
+- **Selenium WebDriver**
+- **pytest**
+- **Allure / pytest-html** (for reporting)
+- **Page Object Model** architecture
 
 ## Getting Started
 
-To get started with the examples in this repository:
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/Pradeepgit-cyber/Pradeep_SDET_Portfolio.git
+    ```
 
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/Pradeepgit-cyber/Pradeep_SDET_Portfolio.git
-   ```
-2. Review the documentation and code samples under each folder.
-3. Install dependencies as described in the relevant `README` files for each project or framework.
-4. Run your preferred automation suite and explore the reports generated.
+2. **Install dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## Highlights
+3. **Run tests**
+    ```bash
+    pytest
+    ```
 
-- **End-to-End Automation Frameworks**  
-  Modular and maintainable automation setups featuring Page Object Model, parallel execution, cross-browser support, and BDD capabilities.
-
-- **API Testing**  
-  REST API automation using REST Assured, Postman collections, and detailed validation strategies.
-
-- **Performance and Security Testing**  
-  Integration with tools like JMeter and basic security test examples.
+4. **View reports**
+    - Reports will be output to the `reports/` directory
 
 ## Contributing
 
-Contributions and feedback are welcome! If you'd like to add frameworks, suggest improvements, or report issues, please [open an issue](https://github.com/Pradeepgit-cyber/Pradeep_SDET_Portfolio/issues) or submit a pull request.
+Contributions welcome!  
+Please raise an [issue](https://github.com/Pradeepgit-cyber/Pradeep_SDET_Portfolio/issues) or submit a pull request for improvements, new features, or bug fixes.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+[MIT License](LICENSE)
 
 ---
 
-**Contact:**  
-You can connect with me on [GitHub](https://github.com/Pradeepgit-cyber/) or reach out for professional collaboration opportunities.
+**Contact**:  
+Connect via [GitHub](https://github.com/Pradeepgit-cyber/) for collaboration or professional inquiries.
