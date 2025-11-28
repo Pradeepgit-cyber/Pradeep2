@@ -33,9 +33,6 @@ successText = driver.find_element(By.CLASS_NAME, "alert-success").text
 assert "Success! Thank you!" in successText
 
 
-
-
-
 time.sleep(5)
 
 
