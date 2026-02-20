@@ -1,0 +1,13 @@
+selenium>=4.25.0
+pytest>=8.3.4
+webdriver-manager>=4.0.1
+pandas>=2.2.3
+requests>=2.32.3
+python-dotenv>=1.0.1
+pytest-html>=4.1.1
+allure-pytest>=2.13.3
+pylint>=3.2.6
+black>=24.4.2
+pytest-cov>=5.0.0
+pytest-xdist>=3.7.0
+faker>=24.14.0
